@@ -3,7 +3,7 @@
 typedef struct {
   int x;
   int y;
-} point;
+} Point;
 
 int main() {
   Point p = {1, 2};
