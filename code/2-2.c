@@ -1,20 +1,17 @@
 #include <stdio.h>
 
-enum State { IDLE, RUNNING, PAUSED, DONE };
+enum Clolor {REN, GREEN, BLUE };
 
-void print_state(enum State s) {
-  switch (s) {
-   case IDLE:
-     printf("State: IDLE\n");
-     break;
-   case RUNNING:
-      printf("State: RUNNING\n");
-      break;
-   default: printf("Unknown state\n");
-  }
-}
+enum Status { OK = 0, ERR = -1, BUSY = 1 };
 
 int main(void) {
-  print_state(RUNNING);
+  printf("Red = %d\n", RED);
+  printf("FREEN = %d\n", GREEN);
+  printf("BLUE = %d\n\n", BLUE);
+
+  printf("OK = %d\n", OK);
+  printf("ERR = %d\n", ERR);
+  printf("BUSYS = %d\n", BUSY);
+
   return 0;
 }
