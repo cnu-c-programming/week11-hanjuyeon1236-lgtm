@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-enum Clolor {REN, GREEN, BLUE };
+typedef int(*BinOp)(int, int);
 
-enum Status { OK = 0, ERR = -1, BUSY = 1 };
+int add(int a, int b) { return a + b; }
+int sub(int a, int b) { return a - b; }
+int mul(int a, int b) { return a * b; }
+
+int compute( ) {
+
+}
 
 int main(void) {
-  printf("Red = %d\n", RED);
-  printf("FREEN = %d\n", GREEN);
-  printf("BLUE = %d\n\n", BLUE);
+  int a = 10, b = 5;
 
-  printf("OK = %d\n", OK);
-  printf("ERR = %d\n", ERR);
-  printf("BUSYS = %d\n", BUSY);
+  printf("%d\n", compute (a, b, add));
+  printf("%d\n", compute (a, b, sub));
+  printf("%d\n", compute (a, b, mul));
+  printf("%d\n", compute (a, b, NULL));
 
   return 0;
 }
