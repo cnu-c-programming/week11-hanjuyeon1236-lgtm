@@ -8,12 +8,13 @@ void print_state(enum State s) {
      printf("State: IDLE\n");
      break;
    case RUNNING:
-     printf("State: RUNNING\n");
-     break;
+      printf("State: RUNNING\n");
+      break;
+   default: printf("Unknown state\n");
   }
 }
 
 int main(void) {
-  printf_state(RUNNING);
+  print_state(RUNNING);
   return 0;
 }
