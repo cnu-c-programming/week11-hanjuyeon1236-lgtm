@@ -3,7 +3,9 @@
 #include <string.h>
 
 int cmp_str(const void *a, const void *b) {
-  return
+  const char *str1 = *(const char **)a;
+    const char *str2 = *(const char **)b;
+  return strcmp(str1, str2);
 }
 
 int main(void) {
