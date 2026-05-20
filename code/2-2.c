@@ -5,7 +5,7 @@ enum Color {RED, GREEN, BLUE };
 enum Status { OK = 0, ERR = -1, BUSY = 1 };
 
 int main(void) {
-  printf("Red = %d\n", RED);
+  printf("RED = %d\n", RED);
   printf("GREEN = %d\n", GREEN);
   printf("BLUE = %d\n\n", BLUE);
 
