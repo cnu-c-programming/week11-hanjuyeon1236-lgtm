@@ -6,7 +6,7 @@ int add(int a, int b) { return a + b; }
 int sub(int a, int b) { return a - b; }
 int mul(int a, int b) { return a * b; }
 
-int compute( ) {
+int compute(int a, int b, BinOp op) {
   if (op == NULL) {
         printf("Null pointer\n");
         return -1;
