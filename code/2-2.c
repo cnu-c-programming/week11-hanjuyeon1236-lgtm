@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-enum Clolor {REN, GREEN, BLUE };
+enum Color {RED, GREEN, BLUE };
 
 enum Status { OK = 0, ERR = -1, BUSY = 1 };
 
